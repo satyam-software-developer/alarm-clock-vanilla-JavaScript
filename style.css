@@ -1,0 +1,589 @@
+/*  GLobal Styles */
+
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+}
+
+/* Body styles */
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  display: block;
+  max-height: none;
+  background: rgb(86, 145, 224);
+  background: radial-gradient(
+    circle,
+    rgb(92, 16, 212) 17%,
+    rgba(163, 18, 163, 0.959) 73%
+  );
+}
+
+/* Flexbox utility classes */
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* text-align: center; */
+  align-content: center;
+  place-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.wrapper flex {
+  justify-items: center;
+
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.container {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  place-items: center;
+  text-align: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+}
+
+/* Logo styles */
+.logo {
+  width: 30px;
+  margin: auto;
+  /* adjust the width as needed */
+  height: auto;
+
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+}
+
+.clock {
+  font-size: 24px;
+  /* adjust the font size as needed */
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+  font-weight: bold;
+  color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: none;
+  max-width: none;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.wrapper img {
+  height: auto;
+  width: 150px;
+  justify-items: center;
+
+  margin: auto;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* Hover effect on logo */
+.wrapper img :hover {
+  /* box-shadow: 0px 1px 1px 10px rgba(189, 36, 36, 0.3); */
+
+  transform: scale(1.1);
+  box-shadow: 0px 1px 1px 10px rgba(194, 39, 39, 0.3);
+}
+
+/* Button styles */
+.btn {
+  outline: none;
+  border: none;
+  background-color: #c168f0;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 1px;
+  transition: all 0.3s ease-in-out;
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+  font-weight: bold;
+  color: #000000;
+  max-height: none;
+  max-width: none;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-shadow: 0px 1px 1px 3px rgb(147, 73, 57);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Select dropdown styles */
+select {
+  appearance: none;
+  outline: black;
+  background-color: #c168f0;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  color: #000000;
+  border-color: black;
+
+  height: 100%;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+  font-size: 15px;
+  box-shadow: 0px 1px 1px 3px rgb(147, 73, 57);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Margin-bottom utility class */
+.mb {
+  margin-bottom: 1rem;
+
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Date styles */
+.date {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: oblique;
+  text-align: center;
+  letter-spacing: 2px;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: none;
+  max-width: none;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #b240df;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px 5px rgba(195, 93, 230, 0.397);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Time styles */
+.time {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  font-weight: bold;
+  color: #000000;
+  margin-right: auto;
+  max-height: none;
+  max-width: none;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+}
+
+/* Styling individual time elements */
+.time span:not(:last-child) {
+  position: relative;
+  max-width: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0;
+  color: #ec6c6c;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: none;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Poppins", sans-serif;
+}
+
+.time span:last-child {
+  background: #2e94e3;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+
+  position: relative;
+  margin: 0 6px;
+  max-width: 0 6px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: #2e94e3;
+  background-color: #2e94e3;
+  background-size: 100%;
+  background-repeat: repeat;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: none;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 1px 10px rgba(194, 39, 39, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+/* End GLobal Styles */
+
+.main-container {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  /* background: linear-gradient(90deg, #da6ada 0%, #ca5cd4 100%); */
+}
+
+/* Clock Container styles */
+.clock-container {
+  padding: 2rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #96a6947a;
+
+  border-radius: 1rem;
+  box-shadow: 0px 1px 1px 5px rgba(194, 39, 39, 0.3);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  place-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+}
+
+/* Current Time styles */
+.current-time {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+
+  letter-spacing: 3px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+  margin-bottom: 5px;
+  padding: bottom 0.5rem;
+}
+
+/* Alarm Form styles */
+.alarm-form {
+  justify-content: space-between;
+  width: 115%;
+
+  display: flex;
+  place-items: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 0.5rem;
+  border-radius: 1px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Submit Button styles */
+.submit-button {
+  border-color: black;
+  border: 100px;
+  border-radius: 2rem;
+  font-weight: bold;
+  justify-content: space-around;
+
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 0.5;
+  box-shadow: 0px 1px 1px 5px rgb(135, 77, 151);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+}
+
+/* Set Alarm Container styles */
+.set-alarm-container {
+  width: 100%;
+
+  height: 100%;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Title for Set Alarm Container styles */
+.set-alarm-container .set-alarm-container-title {
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Alarm styles */
+.alarm {
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 0.1rem 1rem;
+  align-items: center;
+
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* Delete Alarm button styles */
+.alarm .delete-alarm {
+  border-radius: 2rem;
+  background-color: rgba(204, 55, 215, 0.918);
+  font-weight: bold;
+  color: rgb(24, 22, 24);
+  font-size: xx-medium;
+
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "Poppin", sans-serif;
+}
+
+.time {
+  color: #0e141b;
+  font-size: 1rem;
+  font-weight: bold;
+
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-family: "Poppin", sans-serif;
+}
+
+/* Hover effect on buttons */
+.btn:focus,
+.btn:hover {
+  box-shadow: #da78da 2px 2px 2px 1px inset, #221f36 -2px -2px 10px 1px inset;
+}
+
+/* Page title styles */
+.page-title {
+  background: linear-gradient(90deg, #25262a 0%, #3a47d5 100%);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* style of devices of screen size less than 768px */
+/* Media query for screens less than 768px */
+@media only screen and (min-width: 600px) {
+  /* adding padding to container */
+  .main-container {
+    padding-block: 2rem;
+    padding-inline: 2rem;
+  }
+  .clock-container {
+    justify-content: center;
+    border-radius: 50px;
+    width: 400px;
+    min-height: auto;
+
+    padding: 2rem;
+    flex-flow: column;
+    align-items: center;
+    background-color: #465dc27a;
+    box-shadow: 0px 1px 1px 5px rgba(194, 39, 39, 0.3);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+}
