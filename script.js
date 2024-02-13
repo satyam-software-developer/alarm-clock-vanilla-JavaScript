@@ -1,5 +1,3 @@
-
-
 // Selecting DOM elements and get references to HTML elements
 const currentTime = document.querySelector("#current-time");
 const setHours = document.querySelector("#hours");
@@ -109,22 +107,45 @@ function getCurrentTime() {
   return time;
 }
 
+
 // Function to handle form submission and set alarm
 function getInput(e) {
-  e.preventDefault();
-  const hourValue = setHours.value;
-  const minuteValue = setMinutes.value;
-  const secondValue = setSeconds.value;
+  e.preventDefault(); // Prevent the default form submission behavior
+
+  // Get the selected values from the form inputs
+  const hourValue = parseInt(setHours.value); // Convert to integer
+  const minuteValue = parseInt(setMinutes.value); // Convert to integer
+  const secondValue = parseInt(setSeconds.value); // Convert to integer
   const amPmValue = setAmPm.value;
 
-  const alarmTime = convertToTime(
-    hourValue,
-    minuteValue,
-    secondValue,
-    amPmValue
-  );
-  setAlarm(alarmTime);
+  // Check if any of the selected values are not valid numbers
+  if (isNaN(hourValue) || isNaN(minuteValue) || isNaN(secondValue)) {
+    alert("Please select a valid time"); // Alert the user if any value is not a number
+    return; // Exit the function
+  } else {
+    // Call the function to convert the selected values to a valid time format
+    const alarmTime = convertToTime(hourValue, minuteValue, secondValue, amPmValue);
+    // Call the function to set the alarm with the calculated time
+    setAlarm(alarmTime);
+  }
 }
+
+// Example function to convert selected values to a valid time format
+function convertToTime(hour, minute, second, amPm) {
+  // Example logic to convert 12-hour format to 24-hour format
+  if (amPm === 'PM' && hour !== 12) {
+    hour += 12;
+  } else if (amPm === 'AM' && hour === 12) {
+    hour = 0;
+  }
+  // Return the formatted time as an object
+  return {
+    hour: hour,
+    minute: minute,
+    second: second
+  };
+}
+
 
 // Function to convert time to 24-hour format
 function convertToTime(hour, minute, second, amPm) {
@@ -210,4 +231,3 @@ function deleteAlarmFromLocal(time) {
   alarms.splice(index, 1);
   localStorage.setItem("alarms", JSON.stringify(alarms));
 }
-
