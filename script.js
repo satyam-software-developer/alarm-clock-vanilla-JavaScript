@@ -6,7 +6,7 @@ const setSeconds = document.querySelector("#seconds");
 const setAmPm = document.querySelector("#am-pm");
 const setAlarmButton = document.querySelector("#submitButton");
 const alarmContainer = document.querySelector("#alarms-container");
-const ringTone = new Audio("./files/ringtone3.mp3");
+// const ringTone = new Audio("./files/ringtone3.mp3");
 
 // Get the current date
 const currentDate = new Date();
@@ -157,7 +157,7 @@ function setAlarm(time, fetching = false) {
   const alarm = setInterval(() => {
     if (time === getCurrentTime()) {
       alert("Alarm Ringing");
-      ringTone.play();
+      // ringTone.play();
     }
   }, 1000); // Check every second for the alarm time match
 
